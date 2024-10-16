@@ -1,0 +1,116 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+.store-items {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Change to 3 columns */
+  gap: 16px; 
+  padding: 20px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column; 
+  max-width: 34rem;
+  overflow: hidden;
+  margin-left: 6%;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-header {
+  margin: 0;
+}
+
+.card-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.card-body {
+  padding: 76px;
+}
+
+.card-title {
+  font-size: 1.5rem;
+  color: #ffffff;
+}
+
+.card-text {
+  margin-top: 12px;
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px;
+  border-top: 1px solid #ffffff;
+}
+
+.avatars {
+  display: flex;
+  align-items: center;
+  gap: -12px;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid rgb(255, 255, 255);
+  transition: z-index 0.2s ease;
+  cursor: pointer;
+}
+
+.avatar:hover {
+  z-index: 10;
+}
+
+.date {
+  color: #ffffff;
+  font-size: 0.875rem;
+}
+
+.card-rating {
+  margin: 10px 0;
+}
+
+.card-price {
+  font-weight: bold;
+  color: #ff0000;
+}
+
+.buy-now {
+  background-color: #ff0000;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+  font-size: 1rem;
+}
+
+.variety {
+  background-color: #ff0000;
+  color: white;
+  border: none;
+  margin-left: 4%;
+  border-radius: 5px;
+  padding: 10px 15px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+  font-size: 1rem;
+}
+
+.buy-now:hover {
+  background-color: #e60000;
+  transform: scale(1.05);
+}

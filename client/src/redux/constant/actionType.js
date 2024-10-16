@@ -1,0 +1,7 @@
+//export const CREATE_GYM = 'CREATE_GYM'
+ export const GET_GYM = 'GET_GYM'
+ export const GET_STORE = 'GET_STORE'
+ export const GET_GYM_ID = 'GET_GYM_ID'
+ export const GET_STORE_ID = 'GET_STORE_ID'
+ export const GET_VARIETY_ID = 'GET_VARIETY_ID'
+ export const DELETE_GYM = 'DELETE_GYM'

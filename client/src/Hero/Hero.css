@@ -1,0 +1,151 @@
+.hero {
+  background-image: url(https://paradigmpeptides.com/wp-content/uploads/2020/09/HCGasPCT-scaled.jpg);
+  
+  background-size: cover;
+  background-position: center;
+  margin-top: 0; /* Remove negative margin for more predictable positioning */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  padding: 2rem; /* Add padding to prevent content from touching the edges */
+}
+
+.hero h1 {
+
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  color: #ffffff;
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+
+.hero h1 span {
+  color: #ff0000;
+  filter: drop-shadow(0 0 10px red);
+}
+
+.hero h2 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  filter: drop-shadow(0 0 10px red);
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+  filter: drop-shadow(0 0 10px red);
+  margin-bottom: 2rem; /* Add space between the paragraph and button */
+}
+
+.styled-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ff0000;
+  color: #ffffff;
+  border: none;
+  border-radius: 50px;
+  padding: 16px 32px;
+  font-size: 16px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.styled-btn .icon {
+  margin-left: 10px;
+  width: 16px;
+  height: 16px;
+  filter: invert(1);
+}
+
+.styled-btn:hover {
+  background-color: #000;
+}
+
+@media (max-width: 1200px) {
+  .hero h1 {
+    font-size: 3rem;
+  }
+
+  .hero h2 {
+    font-size: 2.5rem;
+  }
+
+  .hero p {
+    font-size: 1.3rem;
+  }
+
+  .styled-btn {
+    padding: 12px 28px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 992px) {
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero h2 {
+    font-size: 2rem;
+  }
+
+  .hero p {
+    font-size: 1.2rem;
+  }
+
+  .styled-btn {
+    padding: 10px 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 1.5rem;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero h2 {
+    font-size: 1.8rem;
+  }
+
+  .hero p {
+    font-size: 1.1rem;
+  }
+
+  .styled-btn {
+    padding: 10px 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero h2 {
+    font-size: 1.5rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .styled-btn {
+    padding: 8px 18px;
+  }
+}

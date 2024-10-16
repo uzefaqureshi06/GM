@@ -1,0 +1,78 @@
+/* Styling for the heading */
+.masonry-grid{
+  background-image: url('https://motionarray.imgix.net/motion-array-2431472-ccuVxeCLpv-high_0014.jpg?w=660&q=60&fit=max&auto=format');
+}
+
+.gallery-heading {
+  
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 24px;
+    color: #333;
+  }
+  
+ 
+  .masonry-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+  
+  @media (min-width: 768px) {
+    .masonry-grid {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+  
+  /* Styling for masonry column */
+  .masonry-column {
+    display: grid;
+    gap: 16px;
+  }
+  
+  /* Common styling for both images and videos */
+  .gallery-photo,
+  .gallery-video {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+    object-position: center;
+  }
+  
+  .gallery-heading {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 600;
+    margin: 20px 0;
+    color: #d4d4d4; /* Change this to your preferred color */
+  }
+  
+  .masonry-grid {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -10px; /* To align columns properly */
+  }
+  
+  .masonry-column {
+    flex: 1; /* Allow columns to grow */
+    padding: 0 10px; /* Padding for left and right */
+  }
+  
+  .gallery-photo {
+    width: 100%;
+    border-radius: 8px;
+    transition: transform 0.3s, box-shadow 0.3s; /* Add transition for smooth effect */
+  }
+  
+  .gallery-photo:hover {
+    transform: scale(1.05); /* Scale image on hover */
+    box-shadow: 0 0 15px rgba(255, 0, 0, 0.8); /* Glowing effect */
+  }
+  
+  .gallery-video {
+    width: 100%;
+    border-radius: 8px;
+    margin: 10px 0; /* Space out videos */
+  }
+  

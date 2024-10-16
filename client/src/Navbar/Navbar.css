@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600&display=swap');
+
+body { font-family: "Orbitron", serif;
+  font-weight: 600;
+  font-style: normal;
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #000;
+}
+
+/* Navbar Container */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 500;
+  align-items: center;
+  background-color: transparent;
+  
+  box-shadow: 0 2px 15px rgba(255, 0, 0, 0.2); 
+  border-bottom: 2px solid rgba(255, 0, 0, 0.5);
+}
+
+/* Logo Styling */
+.navbar .logo img {
+  height: 107px; 
+  transition: transform 0.3s ease;
+}
+
+.navbar .logo img:hover {
+  transform: scale(1.1); 
+  filter: drop-shadow(0 0 10px red);
+}
+
+/* Navbar List */
+.navbar ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar ul li {
+  margin: 0 1.5rem;
+}
+
+.navbar ul li a {
+  color: #fff;
+  font-size: 1.1rem;
+  text-decoration: none;
+  padding: 0.5rem;
+  position: relative;
+  font-family: 'Orbitron', sans-serif; 
+  text-transform: uppercase;
+  letter-spacing: 0.05rem;
+  transition: color 0.3s ease;
+}
+
+/* Link Hover Effects */
+.navbar ul li a::before {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: red;
+  transition: width 0.3s ease;
+}
+
+.navbar ul li a:hover::before {
+  width: 50%; 
+}
+
+.navbar ul li a:hover {
+  color: red;
+}
+
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 4rem;
+    margin-top: -9%;
+}
+
+
+  .navbar ul {
+      flex-direction: column;
+      width: 100%;
+  }
+
+  .navbar ul li {
+      margin: 1rem 0;
+      width: 100%;
+  }
+
+  .navbar ul li a {
+      display: block;
+      width: 100%;
+  }
+}
